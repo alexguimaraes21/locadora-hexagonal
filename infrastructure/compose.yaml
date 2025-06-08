@@ -1,0 +1,10 @@
+services:
+  mariadb:
+    image: 'mariadb:latest'
+    environment:
+      - 'MARIADB_DATABASE=db_locadora'
+      - 'MARIADB_PASSWORD=locadora'
+      - 'MARIADB_ROOT_PASSWORD=rootlocadora'
+      - 'MARIADB_USER=locadora'
+    ports:
+      - '3306'
